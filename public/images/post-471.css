@@ -1,0 +1,22 @@
+.elementor-471 .elementor-element.elementor-element-2dbc6e5{margin-top:0px;margin-bottom:50px;}.elementor-bc-flex-widget .elementor-471 .elementor-element.elementor-element-f0d5ece.elementor-column .elementor-widget-wrap{align-items:center;}.elementor-471 .elementor-element.elementor-element-f0d5ece.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated{align-content:center;align-items:center;}.elementor-471 .elementor-element.elementor-element-f0d5ece:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-471 .elementor-element.elementor-element-f0d5ece > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#FAFAFA;}.elementor-471 .elementor-element.elementor-element-f0d5ece > .elementor-element-populated, .elementor-471 .elementor-element.elementor-element-f0d5ece > .elementor-element-populated > .elementor-background-overlay, .elementor-471 .elementor-element.elementor-element-f0d5ece > .elementor-background-slideshow{border-radius:10px 10px 10px 10px;}.elementor-471 .elementor-element.elementor-element-f0d5ece > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-471 .elementor-element.elementor-element-f0d5ece > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-471 .elementor-element.elementor-element-0f1dea2 > .elementor-element-populated{padding:30px 30px 30px 30px;}@media(max-width:670px){.elementor-471 .elementor-element.elementor-element-0f1dea2 > .elementor-element-populated{padding:10px 10px 10px 10px;}}/* Start custom CSS for section, class: .elementor-element-2dbc6e5 */.category.block-category-nick {
+    padding: 10px 15px;
+    border: 1px solid #d0d0d0;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+}
+.category.block-category-nick:hover {
+    border-color: #13AFF0;
+}
+.category.block-category-nick:hover a{
+    color: #13AFF0;
+}
+.fix-h2-cust{
+    text-transform: lowercase;
+}
+@media(max-width:860px){
+    .category.block-category-nick{
+        font-size: 10px;
+    }
+}/* End custom CSS */

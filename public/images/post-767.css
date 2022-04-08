@@ -1,0 +1,22 @@
+.elementor-767 .elementor-element.elementor-element-334f3e3{margin-top:0px;margin-bottom:50px;}.elementor-767 .elementor-element.elementor-element-3c6b5c6{text-align:left;}.elementor-767 .elementor-element.elementor-element-3c6b5c6 img{height:100px;object-fit:contain;}.elementor-767 .elementor-element.elementor-element-943f81a{text-align:left;}.elementor-767 .elementor-element.elementor-element-943f81a img{width:200px;}.elementor-767 .elementor-element.elementor-element-88989a6{text-align:left;}.elementor-767 .elementor-element.elementor-element-88989a6 img{width:200px;}/* Start custom CSS for section, class: .elementor-element-334f3e3 */.category.block-category-nick {
+    padding: 10px 15px;
+    border: 1px solid #d0d0d0;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+}
+.category.block-category-nick:hover {
+    border-color: #13AFF0;
+}
+.category.block-category-nick:hover a{
+    color: #13AFF0;
+}
+.fix-h2-cust{
+    text-transform: lowercase;
+}
+@media(max-width:860px){
+    .category.block-category-nick{
+        font-size: 10px;
+    }
+}/* End custom CSS */
