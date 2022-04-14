@@ -1,8 +1,9 @@
-import React from 'react'
+import Button from 'components/Button/Button';
+import React from 'react';
 
-const HeaderMain = () => {
+const HeaderMain = ({ handleModal }) => {
   const assets = `${process.env.PUBLIC_URL}/images`;
-    
+
   return (
     <section className="elementor-section elementor-top-section elementor-element elementor-element-e3adf05 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e3adf05" data-element_type="section">
       <div className="elementor-container elementor-column-gap-default">
@@ -34,12 +35,9 @@ const HeaderMain = () => {
             <div className="elementor-element elementor-element-21dcc29 elementor-align-center zapis-na-remont elementor-widget elementor-widget-button" data-id="21dcc29" data-element_type="widget" data-widget_type="button.default">
               <div className="elementor-widget-container">
                 <div className="elementor-button-wrapper">
-                  <a className="elementor-button elementor-size-sm" role="button">
-                    <span className="elementor-button-content-wrapper">
-                      <span className="elementor-button-text">Запись на
-                        ремонт</span>
-                    </span>
-                  </a>
+                  <Button onClick={() => handleModal(true)}>
+                    Запись на ремонт
+                  </Button>
                 </div>
               </div>
             </div>
@@ -78,4 +76,4 @@ const HeaderMain = () => {
   )
 }
 
-export default HeaderMain
+export default HeaderMain;

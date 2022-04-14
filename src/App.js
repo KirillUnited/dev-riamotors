@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Home from "./pages/Home";
+import './styles/styles.css';
 
 function App() {
   const assets = `${process.env.PUBLIC_URL}/images`;

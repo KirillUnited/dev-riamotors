@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HeaderSlider = ({ brands }) => {
+const HeaderSlider = ({ brands = [] }) => {
   return (
     <section className="elementor-section elementor-top-section elementor-element elementor-element-9b1d5a6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9b1d5a6" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
       <div className="elementor-container elementor-column-gap-default">

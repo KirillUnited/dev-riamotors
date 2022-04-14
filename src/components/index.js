@@ -1,4 +1,13 @@
 import Header from './Header/Header';
 import { Footer } from './Footer';
+import HeaderMain from './Header/HeaderMain';
+import HeaderMenu from './Header/HeaderMenu';
+import HeaderSlider from './Header/HeaderSlider';
 
-export { Header, Footer };
+export {
+    Header,
+    Footer,
+    HeaderMain,
+    HeaderMenu,
+    HeaderSlider
+};
