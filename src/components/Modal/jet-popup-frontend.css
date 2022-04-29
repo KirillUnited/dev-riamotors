@@ -545,7 +545,6 @@
     top: 0;
     left: 0;
     z-index: 1;
-    opacity: 0;
     background-color: rgba(0, 0, 0, 0.5)
 }
 
@@ -565,7 +564,6 @@
     max-height: 100%;
     height: auto;
     z-index: 2;
-    opacity: 0
 }
 
 .jet-popup.jet-popup--front-mode .jet-popup__container-inner {
@@ -695,10 +693,6 @@
 }
 
 .jet-popup.jet-popup--single-preview .jet-popup__overlay {
-    opacity: 1
-}
-
-.jet-popup.jet-popup--single-preview .jet-popup__container {
     opacity: 1
 }
 

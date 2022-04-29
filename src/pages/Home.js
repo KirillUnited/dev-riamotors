@@ -5,9 +5,10 @@ import {
   Footer,
   HeaderMain,
   HeaderMenu,
-  HeaderSlider
+  HeaderSlider,
+  Modal,
+  Form
 } from "components";
-import Modal from 'components/Modal/Modal';
 
 const Home = ({ brands }) => {
   const [modalActive, setModalActive] = useState(false);
@@ -24,7 +25,32 @@ const Home = ({ brands }) => {
       </Header>
       home
       <Footer />
-      <Modal active={modalActive} setActive={setModalActive} />
+      <Modal active={modalActive} setActive={setModalActive}>
+        <div className="elementor elementor-182">
+          <div className="elementor-section-wrap">
+            <section className="elementor-section elementor-top-section elementor-element elementor-element-2716a41 elementor-section-boxed elementor-section-height-default elementor-section-height-default">
+              <div className="elementor-container elementor-column-gap-default">
+                <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d873fe4">
+                  <div className="elementor-widget-wrap elementor-element-populated">
+                    <div className="elementor-element elementor-element-e743f07 elementor-widget elementor-widget-heading">
+                      <div className="elementor-widget-container">
+                        <p className="elementor-heading-title elementor-size-large">Запись
+                          на ремонт
+                        </p>
+                      </div>
+                    </div>
+                    <div className="elementor-element elementor-element-238cec4 elementor-button-align-stretch elementor-widget elementor-widget-form">
+                      <div className="elementor-widget-container">
+                        <Form />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </Modal>
     </div>
   )
 };
