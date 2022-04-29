@@ -11,7 +11,7 @@ import Modal from 'components/Modal/Modal';
 
 const Home = ({ brands }) => {
   const [modalActive, setModalActive] = useState(false);
-  const handleModalState = (newValue)=>{
+  const handleModalState = (newValue) => {
     setModalActive(newValue);
   }
 
