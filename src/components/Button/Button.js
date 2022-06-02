@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Import styles
 import styles from './Button.module.scss';
 
 const Button = ({children, ...props }) => {

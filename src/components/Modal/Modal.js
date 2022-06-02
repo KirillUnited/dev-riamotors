@@ -1,5 +1,7 @@
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
+
+// Import styles
 import './jet-popup-frontend.css';
 import './animations.css';
 import styles from './Modal.module.scss';

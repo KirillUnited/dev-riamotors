@@ -9,3 +9,24 @@
     padding-left: calc(10px/2);
     margin-bottom: 10px;
 }
+
+.elementor-main-swiper>.swiper {
+    height: 100%;
+}
+
+.elementor-pagination-position-outside .swiper-container {
+    padding-bottom: 0;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .elementor-main-swiper>.swiper {
+        padding-bottom: 30px;
+    }
+}
