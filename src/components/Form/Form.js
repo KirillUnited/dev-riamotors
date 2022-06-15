@@ -13,20 +13,16 @@ const Form = () => {
           <Input label="Модель автомобиля" size={1} type="text" name="form_fields[name]" id="form-field-name" required="required" aria-required="true"/>
         </div>
         <div className="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_fd3392e elementor-col-100">
-          <label htmlFor="form-field-field_fd3392e" className="elementor-field-label">VIN</label>
-          <input size={1} type="text" name="form_fields[field_fd3392e]" id="form-field-field_fd3392e" className="elementor-field elementor-size-sm  elementor-field-textual" />
+          <Input label="VIN" size={1} type="text" name="form_fields[field_fd3392e]" id="form-field-field_fd3392e"/>
         </div>
         <div className="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_2593d3a elementor-col-100 elementor-field-required elementor-mark-required">
-          <label htmlFor="form-field-field_2593d3a" className="elementor-field-label">Неисправности в автомобиле</label>
-          <input size={1} type="text" name="form_fields[field_2593d3a]" id="form-field-field_2593d3a" className="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true" />
+          <Input label="Неисправности в автомобиле" size={1} type="text" name="form_fields[field_2593d3a]" id="form-field-field_2593d3a"  required="required" aria-required="true"/>
         </div>
         <div className="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_1f675b8 elementor-col-100 elementor-field-required elementor-mark-required">
-          <label htmlFor="form-field-field_1f675b8" className="elementor-field-label">Имя</label>
-          <input size={1} type="text" name="form_fields[field_1f675b8]" id="form-field-field_1f675b8" className="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true" />
+          <Input label="Имя" size={1} type="text" name="form_fields[field_1f675b8]" id="form-field-field_1f675b8"  required="required" aria-required="true"/>
         </div>
         <div className="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_c1f739f elementor-col-100 elementor-field-required elementor-mark-required">
-          <label htmlFor="form-field-field_c1f739f" className="elementor-field-label">Телефон</label>
-          <input size={1} type="text" name="form_fields[field_c1f739f]" id="form-field-field_c1f739f" className="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true" />
+          <Input label="Телефон" size={1} type="text" name="form_fields[field_c1f739f]" id="form-field-field_c1f739f"  required="required" aria-required="true"/>
         </div>
         <div className="elementor-field-type-acceptance elementor-field-group elementor-column elementor-field-group-field_165182a elementor-col-100 elementor-field-required elementor-mark-required">
           <div className="elementor-field-subgroup">
