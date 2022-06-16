@@ -15,17 +15,34 @@ const Form = () => {
       setValues({ ...values, [name]: value })
     }
   }
-  const onSubmit = event => {
+  const onSubmit = async (event) => {
     event.preventDefault();
-    console.log(values);
-    setValues({
-      model: '',
-      VIN: '',
-      issue: '',
-      name: '',
-      phone: ''
-    });
+    try {
+      await saveValues();
+      alert('Your order was successfully submitted!');
+      setValues({
+        model: '',
+        VIN: '',
+        issue: '',
+        name: '',
+        phone: ''
+      });
+    } catch (error) {
+      alert(`Registration failed! ${error.message}`);
+    }
   };
+
+  async function saveValues() {
+    const response = await fetch('https://fakestoreapi.com/products', {
+      method: 'POST',
+      body: JSON.stringify(values)
+    })
+      .then(res => res.json())
+      .then(json => console.log(json));
+    if (response.status !== 200) {
+      throw new Error(`Request failed: ${response.status}`);
+    }
+  }
 
   return (
     <form className="elementor-form" method="post" name="New Form"

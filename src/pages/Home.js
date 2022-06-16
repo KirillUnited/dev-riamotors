@@ -23,12 +23,6 @@ const Home = ({ brands = [] }) => {
     setModalActive(newValue);
   }
 
-  function fetchBrands() {
-    fetch('https://fakestoreapi.com/products')
-      .then(res => res.json())
-      .then(json => console.log(json));
-  }
-
   return (
     <div className="home page-template page-template-elementor_header_footer page page-id-2 wp-custom-logo wp-embed-responsive no-lightbox oceanwp-theme sidebar-mobile content-full-width content-max-width page-header-disabled has-breadcrumbs elementor-default elementor-template-full-width elementor-kit-10 elementor-page elementor-page-2">
       <Header>

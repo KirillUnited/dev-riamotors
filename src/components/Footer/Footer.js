@@ -87,7 +87,7 @@ export const Footer = () => {
                         </div>
                         <div className="elementor-element elementor-element-edadf1b elementor-widget elementor-widget-text-editor" data-id="edadf1b" data-element_type="widget" data-widget_type="text-editor.default">
                           <div className="elementor-widget-container">
-                            <p>Copyright 2022 — Все права защищены</p>
+                            <p>Copyright {new Date().getFullYear()} — Все права защищены</p>
                             <p><a href="index-200.html">Политика обработки персональных
                               данных</a></p>
                             <p><a href="https://new-trait.by/">Разработка и продвижение
