@@ -24,3 +24,7 @@ yarn-error.log*
 
 # public folder
 /public/images/
+
+#IDE
+.idea
+.vscode
