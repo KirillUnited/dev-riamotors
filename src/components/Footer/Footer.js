@@ -3,7 +3,7 @@ import React from 'react'
 export const Footer = () => {
   return (
 
-    <footer id="footer" className="site-footer" itemScope="itemscope" itemType="https://schema.org/WPFooter" role="contentinfo">
+    <footer id="footer" className="site-footer footer" itemScope="itemscope" itemType="https://schema.org/WPFooter" role="contentinfo">
       <div id="footer-inner" className="clr">
         <div id="footer-widgets" className="oceanwp-row clr">
           <div className="footer-widgets-inner">

@@ -21,10 +21,10 @@ const Home = ({ brands = [] }) => {
   const [modalActive, setModalActive] = useState(false);
   const handleModalState = (newValue) => {
     setModalActive(newValue);
-  }
+  };
 
   return (
-    <div className="home page-template page-template-elementor_header_footer page page-id-2 wp-custom-logo wp-embed-responsive no-lightbox oceanwp-theme sidebar-mobile content-full-width content-max-width page-header-disabled has-breadcrumbs elementor-default elementor-template-full-width elementor-kit-10 elementor-page elementor-page-2">
+    <div className="wrapper home page-template page-template-elementor_header_footer page page-id-2 wp-custom-logo wp-embed-responsive no-lightbox oceanwp-theme sidebar-mobile content-full-width content-max-width page-header-disabled has-breadcrumbs elementor-default elementor-template-full-width elementor-kit-10 elementor-page elementor-page-2">
       <Header>
         <HeaderMain handleModal={handleModalState} />
         <HeaderMenu />
@@ -78,7 +78,7 @@ const Home = ({ brands = [] }) => {
         </section>
 
       </Header>
-      home
+      <main className="content">CONTENT</main>
       <Footer />
       <Modal active={modalActive} setActive={setModalActive}>
         <div className="elementor elementor-182">
