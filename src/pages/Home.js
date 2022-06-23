@@ -11,6 +11,7 @@ import {
   Form,
   Button
 } from "components";
+import Section from "layout/Section";
 
 // Import styles
 import 'swiper/css';
@@ -118,66 +119,86 @@ const Home = ({ brands = [] }) => {
 
       </Header>
       <main id="main" className="content site-main" role="main">
-        <section
-            className="elementor-section elementor-top-section elementor-element elementor-element-c568102 elementor-section-boxed elementor-section-height-default elementor-section-height-default">
-          <div className="elementor-container elementor-column-gap-default">
-            <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1d648a6">
-              <div className="elementor-widget-wrap elementor-element-populated">
-                <div
-                    className="elementor-element elementor-element-1486273 elementor-widget elementor-widget-jet-slider">
-                  <div className="elementor-widget-container">
-                    <div className="elementor-main-swiper swiper-container">
-                      <Swiper
-                          modules={[Navigation, Pagination, Autoplay, A11y]}
-                          pagination={{ clickable: true }}
-                          navigation={{ clickable: true }}
-                          autoplay={{
-                            delay: 5000,
-                          }}
-                          spaceBetween={10}
-                          speed={500}
-                      >
-                        {serviceBanners.map(({title, subtitle, desc, image}, index) => {
-                          return (
-                              <SwiperSlide key={index}>
-                                <div className="jet-slider__item sp-slide">
-                                  <div className="sp-image-container">
-                                    <img
-                                        className="sp-image" src={image}
-                                        alt={title}/>
-                                  </div>
-                                  <div className="jet-slider__content">
-                                    <div className="jet-slider__content-item">
-                                      <div className="jet-slider__content-inner">
-                                        {title && <p className="jet-slider__title">
-                                          {title}
-                                        </p>}
-                                        {subtitle && <p className="jet-slider__subtitle">
-                                          {subtitle}
-                                        </p>}
-                                        {desc && <div className="jet-slider__desc">
-                                          {desc}
-                                        </div>}
-                                        <div className="jet-slider__button-wrapper">
-                                          <Button>
-                                            Узнать больше
-                                          </Button>
-                                        </div>
-                                      </div>
-                                    </div>
+        <Section>
+          <div className="elementor-element elementor-element-1486273 elementor-widget elementor-widget-jet-slider">
+            <div className="elementor-widget-container">
+              <div className="elementor-main-swiper swiper-container">
+                <Swiper
+                    modules={[Navigation, Pagination, Autoplay, A11y]}
+                    pagination={{ clickable: true }}
+                    navigation={{ clickable: true }}
+                    autoplay={{
+                      delay: 5000,
+                    }}
+                    spaceBetween={10}
+                    speed={500}
+                >
+                  {serviceBanners.map(({title, subtitle, desc, image}, index) => {
+                    return (
+                        <SwiperSlide key={index}>
+                          <div className="jet-slider__item sp-slide">
+                            <div className="sp-image-container">
+                              <img
+                                  className="sp-image" src={image}
+                                  alt={title}/>
+                            </div>
+                            <div className="jet-slider__content">
+                              <div className="jet-slider__content-item">
+                                <div className="jet-slider__content-inner">
+                                  {title && <p className="jet-slider__title">
+                                    {title}
+                                  </p>}
+                                  {subtitle && <p className="jet-slider__subtitle">
+                                    {subtitle}
+                                  </p>}
+                                  {desc && <div className="jet-slider__desc">
+                                    {desc}
+                                  </div>}
+                                  <div className="jet-slider__button-wrapper">
+                                    <Button>
+                                      Узнать больше
+                                    </Button>
                                   </div>
                                 </div>
-                              </SwiperSlide>
-                          )
-                        })}
-                      </Swiper>
-                  </div>
-                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                    )
+                  })}
+                </Swiper>
               </div>
             </div>
+          </div>
+        </Section>
+        <Section style={{textAlign: 'center'}}>
+          <div className="elementor-element elementor-element-7e4c1d9 elementor-widget elementor-widget-heading">
+            <div className="elementor-widget-container">
+              <h1 className="elementor-heading-title elementor-size-default">Автосервис
+                РиаМоторс</h1>
             </div>
           </div>
-        </section>
+          <div className="elementor-element elementor-element-072125e elementor-widget elementor-widget-heading">
+            <div className="elementor-widget-container">
+              <div className="elementor-heading-title elementor-size-medium">Разрушаем
+                старые стереотипы!
+              </div>
+            </div>
+          </div>
+          <div className="elementor-element elementor-element-0521175 elementor-widget elementor-widget-text-editor">
+            <div className="elementor-widget-container">
+              <p>Сегодня&nbsp;<strong>ВАМ НЕ НУЖНО&nbsp;</strong>быть механиком, мастером,
+                специалистом по техническому контролю, тратить свое драгоценное
+                время на грамотный подбор запчастей. — все это есть у НАС и МЫ это
+                делаем профессионально.</p>
+              <p>СТО РиаМоторс — комплексный автосервис, готовый решить любую проблему
+                с Вашим авто!</p>
+            </div>
+          </div>
+        </Section>
+        <Section>
+
+        </Section>
       </main>
       <Footer />
       <Modal active={modalActive} setActive={setModalActive}>
