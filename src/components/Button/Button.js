@@ -13,6 +13,6 @@ const Button = ({children, ...props }) => {
       </span>
     </button>
   )
-}
+};
 
 export default Button;

@@ -8,7 +8,8 @@ import {
   HeaderMain,
   HeaderMenu,
   Modal,
-  Form
+  Form,
+  Button
 } from "components";
 
 // Import styles
@@ -22,6 +23,44 @@ const Home = ({ brands = [] }) => {
   const handleModalState = (newValue) => {
     setModalActive(newValue);
   };
+  const assets = `${process.env.PUBLIC_URL}/images`;
+  const [serviceBanners, setServiceBanners]=useState([
+    {
+      title:'Заправка кондиционера',
+      subtitle:'35,00 руб.',
+      desc: '',
+      image: `${assets}/klimat_remont-1024x641.jpg`
+    },
+    {
+      title:'Шиномонтаж',
+      subtitle:'42,00 руб.',
+      desc: '',
+      image: `${assets}/123y.jpg`
+    },
+    {
+      title:'Развал-схождение',
+      subtitle:'35,00 руб.',
+      desc: '',
+      image: `${assets}/shod-razval-compressor-e1526558032921-1024x576.jpg`
+    },
+    {
+      title:'Компьютерная диагностика',
+      subtitle:'35,00 руб.',
+      desc: '',
+      image: `${assets}/diagnostika-avto.jpg`
+    },
+    {
+      title:'Акция при ремонте тормозной системы!',
+      subtitle:'',
+      desc: 'При\n' +
+          '                                      проведении любого ремонта,\n' +
+          '                                      связанного с тормозной системой,\n' +
+          '                                      проверка на тормозном стенде\n' +
+          '                                      производится обязательно и\n' +
+          '                                      бесплатно!',
+      image: `${assets}/photo_2021-12-03_18-16-12.jpg`
+    },
+  ]);
 
   return (
     <div className="wrapper home page-template page-template-elementor_header_footer page page-id-2 wp-custom-logo wp-embed-responsive no-lightbox oceanwp-theme sidebar-mobile content-full-width content-max-width page-header-disabled has-breadcrumbs elementor-default elementor-template-full-width elementor-kit-10 elementor-page elementor-page-2">
@@ -78,7 +117,68 @@ const Home = ({ brands = [] }) => {
         </section>
 
       </Header>
-      <main className="content">CONTENT</main>
+      <main id="main" className="content site-main" role="main">
+        <section
+            className="elementor-section elementor-top-section elementor-element elementor-element-c568102 elementor-section-boxed elementor-section-height-default elementor-section-height-default">
+          <div className="elementor-container elementor-column-gap-default">
+            <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1d648a6">
+              <div className="elementor-widget-wrap elementor-element-populated">
+                <div
+                    className="elementor-element elementor-element-1486273 elementor-widget elementor-widget-jet-slider">
+                  <div className="elementor-widget-container">
+                    <div className="elementor-main-swiper swiper-container">
+                      <Swiper
+                          modules={[Navigation, Pagination, Autoplay, A11y]}
+                          pagination={{ clickable: true }}
+                          navigation={{ clickable: true }}
+                          autoplay={{
+                            delay: 5000,
+                          }}
+                          spaceBetween={10}
+                          speed={500}
+                      >
+                        {serviceBanners.map(({title, subtitle, desc, image}, index) => {
+                          return (
+                              <SwiperSlide key={index}>
+                                <div className="jet-slider__item sp-slide">
+                                  <div className="sp-image-container">
+                                    <img
+                                        className="sp-image" src={image}
+                                        alt={title}/>
+                                  </div>
+                                  <div className="jet-slider__content">
+                                    <div className="jet-slider__content-item">
+                                      <div className="jet-slider__content-inner">
+                                        {title && <p className="jet-slider__title">
+                                          {title}
+                                        </p>}
+                                        {subtitle && <p className="jet-slider__subtitle">
+                                          {subtitle}
+                                        </p>}
+                                        {desc && <div className="jet-slider__desc">
+                                          {desc}
+                                        </div>}
+                                        <div className="jet-slider__button-wrapper">
+                                          <Button>
+                                            Узнать больше
+                                          </Button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </SwiperSlide>
+                          )
+                        })}
+                      </Swiper>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+      </main>
       <Footer />
       <Modal active={modalActive} setActive={setModalActive}>
         <div className="elementor elementor-182">

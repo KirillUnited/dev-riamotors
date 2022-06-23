@@ -8,9 +8,9 @@ const HeaderMenu = () => {
           <div className="elementor-widget-wrap elementor-element-populated">
             <div className="elementor-element elementor-element-0a3ac78 elementor-widget elementor-widget-shortcode" data-id="0a3ac78" data-element_type="widget" data-widget_type="shortcode.default">
               <div className="elementor-widget-container">
-                <div className="custom-header-nav clr center">
-                  <div id="site-navigation-wrap" className="no-top-border clr">
-                    <nav id="site-navigation" className="navigation main-navigation clr" itemScope="itemscope" itemType="https://schema.org/SiteNavigationElement" role="navigation">
+                <div className="custom-header-nav  center">
+                  <div id="site-navigation-wrap" className="no-top-border ">
+                    <nav id="site-navigation" className="navigation main-navigation " itemScope="itemscope" itemType="https://schema.org/SiteNavigationElement" role="navigation">
                       <ul id="menu-menju" className="main-menu dropdown-menu sf-menu">
                         <li id="menu-item-155" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-155">
                           <a href="index.html" className="menu-link"><span className="text-wrap">Автосервис
@@ -795,7 +795,7 @@ const HeaderMenu = () => {
                       </ul>
                     </nav>{/* #site-navigation */}
                   </div>{/* #site-navigation-wrap */}
-                  <div className="oceanwp-mobile-menu-icon clr mobile-right">
+                  <div className="oceanwp-mobile-menu-icon  mobile-right">
                     <a href="javascript:void(0)" className="mobile-menu" aria-label="Мобильное меню">
                       <i className="fa fa-bars" aria-hidden="true" />
                       <span className="oceanwp-text">Меню</span>

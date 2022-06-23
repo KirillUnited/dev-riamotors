@@ -11,9 +11,9 @@ const HeaderMain = ({ handleModal }) => {
           <div className="elementor-widget-wrap elementor-element-populated">
             <div className="elementor-element elementor-element-405bc8f elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget elementor-widget-wp-widget-ocean_custom_header_logo" data-id="405bc8f" data-element_type="widget" data-widget_type="wp-widget-ocean_custom_header_logo.default">
               <div className="elementor-widget-container">
-                <div className="custom-header-logo clr left">
-                  <div id="site-logo" className="clr" itemScope itemType="https://schema.org/Brand">
-                    <div id="site-logo-inner" className="clr">
+                <div className="custom-header-logo  left">
+                  <div id="site-logo" className="" itemScope itemType="https://schema.org/Brand">
+                    <div id="site-logo-inner" className="">
                       <a href="index.html" className="custom-logo-link" rel="home" aria-current="page"><img width={170} height={86} src={`${assets}/logo.png`} className="custom-logo" alt="Riamotors" title="Автосервис РиаМоторс" /></a>
                     </div>{/* #site-logo-inner */}
                   </div>{/* #site-logo */}
@@ -74,6 +74,6 @@ const HeaderMain = ({ handleModal }) => {
       </div>
     </section>
   )
-}
+};
 
 export default HeaderMain;
