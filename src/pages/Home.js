@@ -12,6 +12,7 @@ import {
   Button
 } from "components";
 import Section from "layout/Section";
+import Services from "../components/Services/Services";
 
 // Import styles
 import 'swiper/css';
@@ -171,7 +172,7 @@ const Home = ({ brands = [] }) => {
             </div>
           </div>
         </Section>
-        <Section style={{textAlign: 'center'}}>
+        <Section style={{textAlign: 'center', marginTop: '50px', marginBottom: '50px'}}>
           <div className="elementor-element elementor-element-7e4c1d9 elementor-widget elementor-widget-heading">
             <div className="elementor-widget-container">
               <h1 className="elementor-heading-title elementor-size-default">Автосервис
@@ -197,7 +198,7 @@ const Home = ({ brands = [] }) => {
           </div>
         </Section>
         <Section>
-
+          <Services/>
         </Section>
       </main>
       <Footer />
