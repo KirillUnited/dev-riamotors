@@ -38,9 +38,9 @@ export default function Services() {
 
     return (
         <div className={styles.grid}>
-            {services.map(({title, image}) => {
+            {services.map(({title, image}, index) => {
                 return (
-                    <ServicesCard image={image}>
+                    <ServicesCard image={image} key={index}>
                         <a href="#">{title}</a>
                     </ServicesCard>
                 )

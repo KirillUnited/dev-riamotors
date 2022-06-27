@@ -8,7 +8,6 @@ import styles from './Modal.module.scss';
 
 const Modal = ({ active, setActive, children }) => {
   return (
-
     <div id="jet-popup-182"
       className={`${styles.modal} ${active ? styles['active'] : ""} jet-popup jet-popup--front-mode jet-popup--animation-fade`}
       onClick={() => setActive(false)}>
@@ -39,8 +38,7 @@ const Modal = ({ active, setActive, children }) => {
         </div>
       </div>
     </div>
-
   )
-}
+};
 
-export default Modal
+export default Modal;
