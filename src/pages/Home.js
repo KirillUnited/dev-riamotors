@@ -25,7 +25,6 @@ const Home = ({ brands = [] }) => {
   const handleModalState = (newValue) => {
     setModalActive(newValue);
   };
-  const assets = `${process.env.PUBLIC_URL}/images`;
 
   return (
     <div className="wrapper home page-template page-template-elementor_header_footer page page-id-2 wp-custom-logo wp-embed-responsive no-lightbox oceanwp-theme sidebar-mobile content-full-width content-max-width page-header-disabled has-breadcrumbs elementor-default elementor-template-full-width elementor-kit-10 elementor-page elementor-page-2">
