@@ -113,6 +113,55 @@ const Home = ({ brands = [] }) => {
         <Section>
           <Services/>
         </Section>
+        <Section style={{marginTop: '50px', marginBottom: '50px'}}>
+          <div className="elementor-container elementor-column-gap-default">
+            <div style={{alignContent: 'center', alignItems: 'center'}}
+                className="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-29a26eb"
+                data-id="29a26eb" data-element_type="column">
+              <div className="elementor-widget-wrap elementor-element-populated">
+                <div className="elementor-element elementor-element-bf7ed5d elementor-widget elementor-widget-heading"
+                     data-id="bf7ed5d" data-element_type="widget" data-widget_type="heading.default">
+                  <div className="elementor-widget-container">
+                    <h2 className="elementor-heading-title elementor-size-default" style={{color: '#CF2E2E'}}>СТО Patron
+                      авто — шаг навстречу к будущему</h2>
+                  </div>
+                </div>
+                <div className="elementor-element elementor-element-6e76a19 elementor-widget elementor-widget-text-editor"
+                     data-id="6e76a19" data-element_type="widget" data-widget_type="text-editor.default">
+                  <div className="elementor-widget-container">
+                    <p>Автосервис РиаМоторс заключил договор с Шате-М о создании
+                      мультибрендового автосервиса Patron авто в Минске.</p>
+                    <p>Теперь еще больше преимуществ для Вас:</p>
+                    <ul>
+                      <li>самые выгодные цены на запчасти ;</li>
+                      <li>расширенная гарантия (2 года) на 18 брендов автозапчастей;</li>
+                      <li>подтвержденный высокий стандарт качества ремонта автомобилей;
+                      </li>
+                      <li>профессиональная подготовка персонала;</li>
+                      <li>Еще больше СКИДОК и СПЕЦИАЛЬНЫХ ПРЕДЛОЖЕНИЙ.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+                className="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-4dc4e3e"
+                data-id="4dc4e3e" data-element_type="column">
+              <div className="elementor-widget-wrap elementor-element-populated">
+                <div className="elementor-element elementor-element-ebf69c2 elementor-widget elementor-widget-image"
+                     data-id="ebf69c2" data-element_type="widget" data-widget_type="image.default">
+                  <div className="elementor-widget-container">
+                    <img width="427" height="600" src="https://riamotors.by/wp-content/uploads/2021/04/Sertifikat-RiaMotors-kart-427x600-1.jpg"
+                         className="attachment-large size-large" alt="Автосервис РиаМоторс" loading="lazy"
+                         srcSet="https://riamotors.by/wp-content/uploads/2021/04/Sertifikat-RiaMotors-kart-427x600-1.jpg 427w, https://riamotors.by/wp-content/uploads/2021/04/Sertifikat-RiaMotors-kart-427x600-1-214x300.jpg 214w"
+                         sizes="(max-width: 427px) 100vw, 427px" title="Автосервис РиаМоторс"
+                    style={{width: '250px'}}/></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </Section>
       </main>
       <Footer />
       <Modal active={modalActive} setActive={setModalActive}>

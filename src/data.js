@@ -40,6 +40,14 @@ export const services = [
     title: 'Компьютерная диагностика автомобиля',
     image: `${assets}/preview.png`
   },
+  {
+    title: 'Замена тормозных колодок',
+    image: `${assets}/disk-p7z8o3emy9ji75cjct1tiu7qdq8ux6alzxu3e1gge8.png`
+  },
+  {
+    title: 'Шиномонтаж',
+    image: `${assets}/1473406559-115959_2.png`
+  }
 ];
 export const serviceBanners = [
   {

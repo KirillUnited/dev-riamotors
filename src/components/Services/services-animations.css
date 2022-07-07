@@ -1,0 +1,19 @@
+.services-banner-enter {
+    opacity: 0.01;
+    transform: translate(0, 100%);
+}
+
+.services-banner-enter.services-banner-enter-active {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: opacity 600ms, transform 600ms;
+}
+
+.services-banner-leave {
+    opacity: 1;
+}
+
+.services-banner-leave.services-banner-leave-active {
+    opacity: 0.01;
+    transform: translate(0, 100%);
+}
