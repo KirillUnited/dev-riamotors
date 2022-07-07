@@ -29,7 +29,7 @@ const Form = () => {
         issue: '',
         name: '',
         phone: ''
-      });
+      }); 
     } catch (error) {
       alert(`Registration failed! ${error.message}`);
     }
